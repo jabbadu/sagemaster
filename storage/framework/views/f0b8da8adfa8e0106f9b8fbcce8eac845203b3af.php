@@ -1,1 +1,0 @@
-Sidebar<?php /**PATH /Users/olafparusel/_Sites/sagemaster/app/public/wp-content/themes/sagemaster/resources/views/sections/sidebar.blade.php ENDPATH**/ ?>
