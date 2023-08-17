@@ -81,7 +81,7 @@ add_action('after_setup_theme', function () {
         /**
          * Disable WordPress REST API
          */
-        'disable-rest-api',
+        'disable-rest-api' => false,
 
         /**
          * Remove version query string from all styles and scripts

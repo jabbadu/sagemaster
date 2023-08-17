@@ -1,9 +1,13 @@
+{{--
+    Template Name: Custom Template
+--}}
+
 @extends('layouts.sidebar-right')
 
 @section('content')
     @hasposts
 
-        @includeFirst(['partials.single.content-' . get_post_type(), 'partials.single.content'])
+        @includeFirst(['partials.single.' . get_post_type(), 'partials.single.post'])
 
     @endhasposts
 @endsection

@@ -26,10 +26,10 @@ class Alert extends Component
      * @var array
      */
     public $types = [
-        'default' => 'text-indigo-50 bg-indigo-400',
-        'success' => 'text-green-50 bg-green-400',
-        'caution' => 'text-yellow-50 bg-yellow-400',
-        'warning' => 'text-red-50 bg-red-400',
+        'primary' => 'alert alert-primary',
+        'success' => 'alert alert-success',
+        'danger' => 'alert alert-danger',
+        'warning' => 'alert alert-warning',
     ];
 
     /**
@@ -39,9 +39,9 @@ class Alert extends Component
      * @param  string  $message
      * @return void
      */
-    public function __construct($type = 'default', $message = null)
+    public function __construct($type = 'primary', $message = null)
     {
-        $this->type = $this->types[$type] ?? $this->types['default'];
+        $this->type = $this->types[$type] ?? $this->types['primary'];
         $this->message = $message;
     }
 
