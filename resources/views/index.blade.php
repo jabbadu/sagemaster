@@ -11,7 +11,7 @@
     @endnoposts
 
     @posts
-        @includeIf('loops.content')
+        @includeFirst(['loops.' . get_post_type(), 'loops.content'])
     @endposts
 
 @endsection
