@@ -56,6 +56,20 @@ return [
             'throw' => false,
         ],
 
+        'wp_content' => [
+            'driver' => 'local',
+            'root' => WP_CONTENT_DIR,
+            'url' => content_url(),
+            'visibility' => 'public',
+        ],
+
+        'uploads' => [
+            'driver' => 'local',
+            'root' => wp_get_upload_dir()['basedir'],
+            'url' => wp_get_upload_dir()['baseurl'],
+            'visibility' => 'public',
+        ],
+
     ],
 
     /*

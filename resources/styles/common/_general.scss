@@ -1,0 +1,8 @@
+// fix link icon aligment
+i {
+    &.bi {
+        &:before {
+            vertical-align: top;
+        }
+    }
+}

@@ -4,6 +4,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <?php wp_head(); ?>
+      <?php echo app(Spatie\GoogleFonts\GoogleFonts::class)->load()->toHtml(); ?>
     </head>
 
     <body <?php body_class('vh-100'); ?>>

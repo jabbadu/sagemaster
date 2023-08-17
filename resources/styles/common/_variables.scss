@@ -5,6 +5,9 @@
 // $dark: #3B3B3B;
 // $light: #EDEDED;
 
+// Disable bootswatch web-font-loading
+$web-font-path: false;
+
 @import "~bootswatch/dist/cosmo/variables";
 
 /** Import Bootstrap functions - do not change */
@@ -13,7 +16,10 @@
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 
+
 @import "~bootswatch/dist/cosmo/bootswatch";
+
+
 
 // Common
 $link-decoration: none;

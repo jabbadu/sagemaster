@@ -195,6 +195,7 @@ return [
          */
         // App\Providers\ThemeServiceProvider::class,
         App\Providers\PrimaryNavigation::class,
+        Spatie\GoogleFonts\GoogleFontsServiceProvider::class,
 
     ],
 
