@@ -26,10 +26,14 @@ class Alert extends Component
      * @var array
      */
     public $types = [
-        'primary' => 'alert alert-primary',
-        'success' => 'alert alert-success',
-        'danger' => 'alert alert-danger',
-        'warning' => 'alert alert-warning',
+        'primary'   => 'alert alert-primary',
+        'secobdary' => 'alert alert-secondary',
+        'success'   => 'alert alert-success',
+        'danger'    => 'alert alert-danger',
+        'warning'   => 'alert alert-warning',
+        'info'      => 'alert alert-info',
+        'dark'      => 'alert alert-dark',
+        'light'     => 'alert alert-light',
     ];
 
     /**
