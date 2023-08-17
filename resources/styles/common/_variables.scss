@@ -1,0 +1,24 @@
+// $primary: #2d509c;
+// $secondary: #F8D465;
+// $warning: #ffa500;
+// $danger: #ff0000;
+// $dark: #3B3B3B;
+// $light: #EDEDED;
+
+@import "~bootswatch/dist/cosmo/variables";
+
+/** Import Bootstrap functions - do not change */
+@import "~bootstrap/scss/functions";
+// Required - do not change
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+@import "~bootswatch/dist/cosmo/bootswatch";
+
+// Common
+$link-decoration: none;
+
+// Mindert den Kontrast, damit weiße Schrift über dunklen Farben eher erscheint
+$min-contrast-ratio: 1;
+
+// $font-size-base: 1.15rem;
