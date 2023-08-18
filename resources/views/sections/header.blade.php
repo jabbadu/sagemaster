@@ -27,6 +27,9 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+            @includeIf('partials.theme-switcher')
+            
             <!-- Navbar Toggler -->
             {{-- <button class="btn btn-outline-dark d-xl-none ms-1 ms-md-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-navbar" aria-controls="offcanvas-navbar">
                 {!! $burgerIcon !!}

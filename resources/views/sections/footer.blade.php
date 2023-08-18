@@ -45,8 +45,7 @@
                             <button class="btn btn-primary" type="button">Subscribe</button>
                         </div>
                     </form>
-
-                    <button id="theme-toggle" class="btn btn-primary mt-3">Theme wechseln</button>
+                    
                 </div>
             </div>
 
