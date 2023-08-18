@@ -1,5 +1,5 @@
-<header id="main-head" class="header-offcanvas">
-    <nav id="nav-main" class="navbar navbar-expand-lg text-bg-transparent">
+<header id="main-head" class="header-offcanvas sticky-top">
+    <nav id="nav-main" class="navbar navbar-expand-lg bg-body-tertiary">
     
         <div class="container">
     
@@ -8,7 +8,7 @@
                 {{ $siteName }}
             </a>
 
-            <x-offcanvas id="offcanvasNavbar" class="text-bg-dark" align="left" title="Menu">
+            <x-offcanvas id="offcanvasNavbar" class="bg-body-tertiary" align="left" title="Menu">
                 <?php
                     wp_nav_menu(array(
                         'theme_location'    => 'primary_navigation',
@@ -22,13 +22,13 @@
                         // 'walker' => new App\bootstrap_5_wp_nav_menu_walker()
                     ));
                 ?>
+
+                @includeIf('partials.theme-switcher')
             </x-offcanvas>
     
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            @includeIf('partials.theme-switcher')
             
             <!-- Navbar Toggler -->
             {{-- <button class="btn btn-outline-dark d-xl-none ms-1 ms-md-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-navbar" aria-controls="offcanvas-navbar">
