@@ -1,4 +1,4 @@
-<div class="text-bg-light mt-auto">
+<div class="text-bg-secondary mt-auto">
     <div class="container">
         <footer class="pt-5">
             <div class="row">
@@ -45,6 +45,7 @@
                             <button class="btn btn-primary" type="button">Subscribe</button>
                         </div>
                     </form>
+                    
                 </div>
             </div>
 
