@@ -24,6 +24,7 @@ $web-font-path: false;
 $link-decoration: none;
 
 // Mindert den Kontrast, damit weiße Schrift über dunklen Farben eher erscheint
+// https://stackoverflow.com/questions/65170317/sass-scss-bootstrap-5-color-functions-not-working-well
 $min-contrast-ratio: 3;
 
 // $font-size-base: 1.15rem;
