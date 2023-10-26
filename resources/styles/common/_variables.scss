@@ -8,7 +8,7 @@ $secondary: #e72937;
 // Disable bootswatch web-font-loading
 $web-font-path: false;
 
-@import "~bootswatch/dist/cosmo/variables";
+@import "~bootswatch/dist/united/variables";
 
 /** Import Bootstrap functions - do not change */
 @import "~bootstrap/scss/functions";
@@ -17,8 +17,7 @@ $web-font-path: false;
 @import "~bootstrap/scss/mixins";
 
 
-@import "~bootswatch/dist/cosmo/bootswatch";
-
+@import "~bootswatch/dist/united/bootswatch";
 
 // Common
 $link-decoration: none;
