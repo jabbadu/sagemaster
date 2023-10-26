@@ -15,7 +15,7 @@
         <svg class="bi my-1 me-1 theme-icon-active">
             <use href="#moon-stars-fill"></use>
         </svg>
-        <span class="d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
+        <span class="d-none" id="bd-theme-text">Toggle theme</span>
     </button>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
         <li>
