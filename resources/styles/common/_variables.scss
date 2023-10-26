@@ -1,5 +1,5 @@
-// $primary: #2d509c;
-// $secondary: #F8D465;
+$primary: #073458;
+$secondary: #e72937;
 // $warning: #ffa500;
 // $danger: #ff0000;
 // $dark: #3B3B3B;
@@ -8,7 +8,7 @@
 // Disable bootswatch web-font-loading
 $web-font-path: false;
 
-@import "~bootswatch/dist/united/variables";
+@import "~bootswatch/dist/cosmo/variables";
 
 /** Import Bootstrap functions - do not change */
 @import "~bootstrap/scss/functions";
@@ -17,7 +17,7 @@ $web-font-path: false;
 @import "~bootstrap/scss/mixins";
 
 
-@import "~bootswatch/dist/united/bootswatch";
+@import "~bootswatch/dist/cosmo/bootswatch";
 
 
 // Common
@@ -25,6 +25,6 @@ $link-decoration: none;
 
 // Mindert den Kontrast, damit weiße Schrift über dunklen Farben eher erscheint
 // https://stackoverflow.com/questions/65170317/sass-scss-bootstrap-5-color-functions-not-working-well
-$min-contrast-ratio: 3;
+$min-contrast-ratio: 2;
 
 // $font-size-base: 1.15rem;
