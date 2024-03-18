@@ -50,12 +50,12 @@ add_action('after_setup_theme', function () {
             /**
              * Disable WordPress emojis.
              */
-            'disable_emojis',
+            'disable_emojis' => true,
 
             /**
              * Disable Gutenberg block library CSS.
              */
-            'disable_gutenberg_block_css',
+            'disable_gutenberg_block_css' => true,
 
             /**
              * Disable extra RSS feeds.

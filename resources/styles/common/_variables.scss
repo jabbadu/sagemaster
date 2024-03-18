@@ -1,5 +1,5 @@
-$primary: #073458;
-$secondary: #e72937;
+// $primary: #073458;
+// $secondary: #e72937;
 // $warning: #ffa500;
 // $danger: #ff0000;
 // $dark: #3B3B3B;
@@ -15,7 +15,6 @@ $web-font-path: false;
 // Required - do not change
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
-
 
 @import "~bootswatch/dist/united/bootswatch";
 
