@@ -3,7 +3,8 @@ import domReady from '@roots/sage/client/dom-ready';
 // Import Bootstrap
 import 'bootstrap';
 
-import {themeSwitch} from './theme-switch.js';
+import { themeSwitch } from './theme-switch.js';
+import { Livewire } from '../../vendor/livewire/livewire/dist/livewire.js'
 
 /**
  * Application entrypoint

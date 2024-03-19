@@ -7,6 +7,7 @@
 namespace App;
 
 use function Roots\bundle;
+use Illuminate\Support\Facades\Blade;
 
 /**
  * Register the theme assets.
@@ -246,4 +247,14 @@ add_action('widgets_init', function () {
         'name' => __('Footer', 'sage'),
         'id' => 'sidebar-footer',
     ] + $config);
+});
+
+
+// LIVEWIRE INTEGRATION
+add_filter('wp_head', function () {
+    echo Blade::render('@livewireStyles');
+});
+
+add_filter('wp_footer', function () {
+    echo Blade::render('@livewireScripts');
 });
