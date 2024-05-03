@@ -81,23 +81,23 @@ export const themeSwitch = async (err) => {
     })
 
     // Füge einen Event Listener für den Button hinzu
-    const themeToggleBtn = document.getElementById('theme-toggle');
-    themeToggleBtn.addEventListener('click', () => {
-        // Überprüfe das aktuelle Theme
-        const currentTheme = getStoredTheme();
+    // const themeToggleBtn = document.getElementById('theme-toggle');
+    // themeToggleBtn.addEventListener('click', () => {
+    //     // Überprüfe das aktuelle Theme
+    //     const currentTheme = getStoredTheme();
         
-        // Definiere das neue Theme
-        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+    //     // Definiere das neue Theme
+    //     const newTheme = currentTheme === 'light' ? 'dark' : 'light';
         
-        // Speichere das neue Theme
-        setStoredTheme(newTheme);
+    //     // Speichere das neue Theme
+    //     setStoredTheme(newTheme);
         
-        // Aktualisiere das Theme auf der Seite
-        setTheme(newTheme);
+    //     // Aktualisiere das Theme auf der Seite
+    //     setTheme(newTheme);
         
-        // Zeige das aktive Theme auf dem Button an
-        showActiveTheme(newTheme, true);
-    });
+    //     // Zeige das aktive Theme auf dem Button an
+    //     showActiveTheme(newTheme, true);
+    // });
 
 }; // endexport
 
