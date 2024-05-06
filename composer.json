@@ -44,6 +44,7 @@
     "log1x/sage-directives": "^2.0",
     "log1x/sage-svg": "^1.1.2",
     "roots/acorn": "^4.2.2",
+    "roots/acorn-prettify": "^1.0",
     "spatie/laravel-google-fonts": "^1.2",
     "twbs/bootstrap-icons": "^1.11"
   },
