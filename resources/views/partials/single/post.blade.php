@@ -11,5 +11,3 @@
         @content
     </div>
 </article>
-
-<livewire:post-list />
