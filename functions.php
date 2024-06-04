@@ -11,6 +11,8 @@
 |
 */
 
+use Illuminate\Support\Facades\Log;
+
 if (! file_exists($composer = __DIR__.'/vendor/autoload.php')) {
     wp_die(__('Error locating autoloader. Please run <code>composer install</code>.', 'sage'));
 }
@@ -63,3 +65,33 @@ collect(['setup', 'filters'])
             );
         }
     });
+
+
+// @todo Something like this should be in the filters.php file
+function generate_and_save_acf_content($post_id) {
+    // Sicherstellen, dass es sich um den richtigen Post-Typ handelt
+    if (get_post_type($post_id) !== 'page') {
+        return;
+    }
+
+    // Überprüfen, ob das ACF-Feld existiert und Daten hat
+    if (has_flexible('pageelements', $post_id)) {
+        ob_start();  // Output Buffering starten
+        
+            the_flexible('pageelements');
+    
+        $content_html = ob_get_clean();  // Buffer in Variable speichern und Buffer löschen
+
+        // Log::info('generate_and_save_acf_content', ['content_html' => $content_html]);
+        
+        // Inhalt im Post speichern
+        remove_action('save_post', 'generate_and_save_acf_content');
+        wp_update_post(array(
+            'ID'           => $post_id,
+            'post_content' => $content_html
+        ));
+        add_action('save_post', 'generate_and_save_acf_content');
+    }
+}
+add_action('save_post', 'generate_and_save_acf_content');
+    

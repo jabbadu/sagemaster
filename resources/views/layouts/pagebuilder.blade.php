@@ -6,8 +6,8 @@
 
     @include('sections.header')
 
-    <div class="main-content my-5">
-        <div class="container-fluid">
+    <div class="main-content mb-5">
+        <div class="container-fluid px-0">
             @yield('content')
         </div>
     </div>

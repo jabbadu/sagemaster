@@ -5,6 +5,7 @@ import 'bootstrap';
 
 import { themeSwitch } from './theme-switch.js';
 import { Livewire } from '../../vendor/livewire/livewire/dist/livewire.js'
+import simpleParallax from 'simple-parallax-js';
 
 /**
  * Application entrypoint
@@ -12,6 +13,9 @@ import { Livewire } from '../../vendor/livewire/livewire/dist/livewire.js'
  */
 domReady(async () => {
     themeSwitch();
+
+    const image = document.getElementsByClassName('hero');
+    new simpleParallax(image);
 });
 
 /**

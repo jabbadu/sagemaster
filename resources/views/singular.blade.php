@@ -2,7 +2,7 @@
 
 @section('content')
     @hasposts
-
+    
         @includeFirst(['partials.single.' . get_post_type(), 'partials.single.post'])
 
     @endhasposts
